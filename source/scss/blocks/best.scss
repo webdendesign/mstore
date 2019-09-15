@@ -1,0 +1,46 @@
+.best {
+    margin-bottom: 30px;
+}
+
+.best__header {
+    width: 870px;
+    min-height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.best__all {
+    text-transform: uppercase;
+}
+
+.best__list {
+    @include list;
+    display: flex;
+    justify-content: space-between;
+}
+
+.best__item img {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.best__name {
+    margin: 0;
+}
+
+.best__total {
+    margin: 0;
+}
+
+.best__list li:nth-child(4n) {
+    margin-top: -85px;
+}
+
+.best__list li:nth-child(4n) img {
+    margin-bottom: 0;
+}
+
+.best__list li:nth-child(4n) .best__block {
+    display: none;
+}

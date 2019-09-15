@@ -1,0 +1,32 @@
+.discover {
+    margin: 0 0 30px;
+    min-height: 400px;
+}
+
+.discover__wrapper {
+    display: flex;
+}
+
+.discover__block {
+    padding: 80px 50px;
+    width: 585px;
+    text-align: center;
+    background-color: #96dbc9;
+}
+
+.discover__title {
+    margin: 0 0 45px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.discover__desc {
+    margin: 0 auto 45px;
+    width: 410px;
+}
+
+.discover__link {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}

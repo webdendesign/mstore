@@ -1,0 +1,9 @@
+.service__list {
+    @include list;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service__name {
+    text-transform: uppercase;
+}

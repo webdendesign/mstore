@@ -1,0 +1,38 @@
+.product__header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 60px;
+    padding: 0 15px;
+    padding-top: 25px;
+}
+
+.product__title {
+    margin: 0;
+    font-size: 30px;
+}
+
+.product__all {
+    margin: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.product__list {
+    @include list;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product__item {
+    width: 270px;
+    margin-bottom: 30px;
+}
+
+.product__name {
+    margin: 0;
+}
+
+.product__total {
+    margin: 0;
+}

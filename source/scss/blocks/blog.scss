@@ -1,0 +1,26 @@
+
+.blog__title {
+    font-size: 24px;
+}
+
+.blog__list {
+    @include list;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.blog__intro {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.blog__date {
+    display: flex;
+}
+
+.blog__read {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 700;
+}
