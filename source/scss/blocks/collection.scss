@@ -2,3 +2,53 @@
     margin-bottom: 30px;
     min-height: 260px;
 }
+
+.collection__wrapper {
+    min-height: 200px;
+    padding: 60px 0 0 70px;
+    background-image: url("../img/3.jpg");
+    background-position: 0 center;
+    background-repeat: no-repeat;
+}
+
+.collection__intro {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #f7941d;
+    text-transform: uppercase;
+}
+
+.collection__title {
+    margin: 0 0 10px;
+    font-size: 30px;
+    color: #00c8c8;
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+
+.collection__description {
+    margin: 0 0 30px;
+    width: 590px;
+    color: #787878;
+}
+
+.collection__shopping {
+    position: relative;
+    margin: 0;
+    width: 110px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &::after {
+        position: absolute;
+        content: "";
+        top: 1px;
+        right: 0;
+        width: 5px;
+        height: 8px;
+        background-image: url("../img/Arrow_Right.png");
+    }
+}

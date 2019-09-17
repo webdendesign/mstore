@@ -2,13 +2,23 @@
     display: flex;
     justify-content: space-between;
     min-height: 60px;
-    padding: 0 15px;
     padding-top: 25px;
 }
 
 .product__title {
+    position: relative;
     margin: 0;
     font-size: 30px;
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: 32px;
+        left: 0;
+        width: 50px;
+        height: 1px;
+        background-color: #000000;
+    }
 }
 
 .product__all {
@@ -27,12 +37,89 @@
 .product__item {
     width: 270px;
     margin-bottom: 30px;
+
+    &--hot {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 50px;
+            background-color: #ffff00;
+        }
+
+        &::after {
+            position: absolute;
+            content: "HOT";
+            top: 0;
+            left: 0;
+            color: #ff1100;
+            transform: rotateX(deg90);
+        }
+    }
+
+    &--new {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 50px;
+            background-color: #00c8c8;
+        }
+
+        &::after {
+            position: absolute;
+            content: "NEW";
+            top: 0;
+            left: 0;
+            color: #ffffff;
+            transform: rotateX(deg90);
+        }
+    }
+
+    &--sale {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 50px;
+            background-color: #ed1c24;
+        }
+
+        &::after {
+            position: absolute;
+            content: "SALE";
+            top: 0;
+            left: 0;
+            color: #ffffff;
+            transform: rotate(deg90);
+        }
+    }
+}
+
+.product__item img {
+    display: block;
+    margin-bottom: 20px;
 }
 
 .product__name {
-    margin: 0;
+    margin: 0 0 5px;
+    font-weight: 400;
 }
 
 .product__total {
     margin: 0;
+    font-size: 20px;
+    font-weight: 700;
 }

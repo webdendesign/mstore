@@ -8,21 +8,33 @@
 }
 
 .discover__block {
-    padding: 80px 50px;
+    padding: 80px 50px 60px;
     width: 585px;
     text-align: center;
     background-color: #96dbc9;
 }
 
 .discover__title {
+    position: relative;
     margin: 0 0 45px;
     font-size: 24px;
     text-transform: uppercase;
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: 32px;
+        left: 240px;
+        width: 50px;
+        height: 1px;
+        background-color: #000000;
+    }
 }
 
 .discover__desc {
     margin: 0 auto 45px;
     width: 410px;
+    line-height: 30px;
 }
 
 .discover__link {
