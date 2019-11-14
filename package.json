@@ -1,8 +1,7 @@
 {
   "name": "mstore",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "project mstore",
   "dependencies": {},
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "^1.0.x",
