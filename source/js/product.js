@@ -2,8 +2,8 @@
 // productHot.classList.add("product__item--hot");
 // let productNew = document.querySelector(".product__item:nth-child(4)");
 // productNew.classList.add("product__item--new");
-// let productSale = document.querySelector(".product__item:nth-child(5)");
-// productSale.classList.add("product__item--sale");
+// let productSale = document.querySelector(".product__item:nth-child(6)");
+// productSale.classList.add("product--unavailable");
 
 var catalogData = [
   {
@@ -19,7 +19,8 @@ var catalogData = [
   {
     isHot: false,
     isNew: false,
-    isSale: false
+    isSale: false,
+    isUnavailable: true
   },
   {
     isHot: false,
@@ -34,11 +35,12 @@ var catalogData = [
   {
     isHot: false,
     isNew: false,
-    isSale: false
+    isSale: false,
+    isUnavailable: true
   },
   {
-    isHot: false,
-    isNew: false,
+    isHot: true,
+    isNew: true,
     isSale: false
   },
   {
@@ -64,6 +66,10 @@ var updateCards = function(products) {
 
     if (product.isSale) {
       element.classList.add("product__item--sale");
+    }
+
+    if (product.isUnavailable) {
+      element.classList.add("product__item--unavailable");
     }
   }
 };
